@@ -1,4 +1,4 @@
-/*
+﻿/*
 
 Copyright (c) 2014, 2015, 2016 Jarryd Beck
 
@@ -729,6 +729,11 @@ namespace cxxopts
 
       return *iter->second;
     }
+
+	inline const std::map<std::string, std::shared_ptr<OptionDetails>> & options()
+	{
+		return m_options;
+	}
 
     //parse positional arguments into the given option
     inline
